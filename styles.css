@@ -1,0 +1,51 @@
+/* Brotherhood — brotherhood.help */
+:root {
+  --bg: #faf6f1;
+  --ink: #2b2018;
+  --ink-soft: #6b5d51;
+  --accent: #c24a24;
+  --rule: #e6ddd3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1611;
+    --ink: #f0e8df;
+    --ink-soft: #a99b8d;
+    --accent: #e06a3f;
+    --rule: #37302a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.65 Georgia, "Times New Roman", serif;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+h1, h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+h2 { font-size: 1.2rem; margin: 2.2rem 0 0.6rem; }
+p, li { color: var(--ink); }
+.soft { color: var(--ink-soft); }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.wordmark {
+  color: var(--accent);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+.wordmark a { text-decoration: none; }
+ul { padding-left: 1.2rem; }
+li { margin: 0.3rem 0; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+footer { color: var(--ink-soft); font-size: 0.9rem; }
+footer a { color: var(--ink-soft); }
+.updated { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 2rem; }
