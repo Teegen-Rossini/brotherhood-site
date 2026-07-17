@@ -278,6 +278,27 @@ footer .foot-links { display: flex; flex-wrap: wrap; gap: 1.4rem; }
 .step h3 { font-size: 1.05rem; margin-bottom: 0.35rem; font-weight: 600; }
 .step p { font-size: 0.95rem; color: var(--ink-soft); }
 
+.crews {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+.crew-card {
+  background: var(--bg-raise);
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  padding: 1.4rem 1.3rem 1.5rem;
+}
+.crew-card .crew-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+.crew-card p { font-size: 0.92rem; color: var(--ink-soft); }
+
 .manifesto { text-align: center; padding: 4.6rem 0; }
 .manifesto .lines {
   font-family: "Fraunces", Georgia, serif;
@@ -424,7 +445,12 @@ footer .foot-links { display: flex; flex-wrap: wrap; gap: 1.4rem; }
   .hero { grid-template-columns: 1fr; padding: 3rem 0 2.8rem; gap: 2.6rem; }
   .phone { transform: rotate(0deg); }
   .steps { grid-template-columns: 1fr; }
+  .crews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   /* nav stays visible on phones — it's the only way around the site */
   .topbar { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
   .topbar nav { flex-wrap: wrap; gap: 0.9rem 1.2rem; }
+}
+
+@media (max-width: 560px) {
+  .crews { grid-template-columns: 1fr; }
 }
