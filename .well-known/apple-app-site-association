@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["MA5K38AZQ6.com.teegen.brohood"],
+        "components": [
+          { "/": "/join", "comment": "crew invite links" },
+          { "/": "/join/*", "comment": "crew invite links, trailing slash or path form" }
+        ]
+      }
+    ]
+  }
+}

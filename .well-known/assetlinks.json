@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.teegen.brohood",
+      "sha256_cert_fingerprints": [
+        "FE:A2:13:A9:DE:D4:26:32:72:DF:A4:9A:4C:33:AC:83:7E:2C:E8:E1:58:E5:26:C4:E3:6C:6B:9E:B9:61:D9:EF"
+      ]
+    }
+  }
+]
