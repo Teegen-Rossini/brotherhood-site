@@ -1,0 +1,5 @@
+# https://brotherhood.help/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://brotherhood.help/sitemap.xml
